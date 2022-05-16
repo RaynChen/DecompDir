@@ -1,0 +1,12 @@
+1. copy Lib, delete the old one but keep the .git file
+2. Win:
+    for %i in (*.jar) do ("C:\Program Files\7-Zip\7zG.exe" x %i -y -aou -o.\%~ni)
+   Mac:
+   for i in *.jar; do unzip $i -d "${i%.jar}"; done;
+$pwd
+/Users/ruiyunchen/Git_Local/Decomp
+$jar -cvf Decomp.jar *
+
+File->ProjectStructure
+
+java -jar  ~/Git_Local/Decomp/Decomp.jar "./PSM-2.0.79.0-SNAPSHOT-test"
